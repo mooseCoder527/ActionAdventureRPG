@@ -10,8 +10,8 @@ config_version=5
 
 [application]
 
-config/name="action rpg 0.11"
-config/tags=PackedStringArray("added.player.stun.state")
+config/name="action rpg"
+config/tags=PackedStringArray()
 run/main_scene="res://playground.tscn"
 config/features=PackedStringArray("4.3", "Mobile")
 config/icon="res://icon.svg"
