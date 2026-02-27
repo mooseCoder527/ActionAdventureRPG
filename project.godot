@@ -11,7 +11,6 @@ config_version=5
 [application]
 
 config/name="action rpg"
-config/tags=PackedStringArray()
 run/main_scene="res://playground.tscn"
 config/features=PackedStringArray("4.3", "Mobile")
 config/icon="res://icon.svg"
@@ -19,8 +18,8 @@ config/icon="res://icon.svg"
 [autoload]
 
 LevelManager="*res://00_Globals/global_level_manager.gd"
-PlayerManager="*res://00_Globals/global_player_manager.gd"
 PlayerHud="*res://GUI/player_hud/player_hud.tscn"
+PlayerManager="*res://00_Globals/global_player_manager.gd"
 
 [display]
 
