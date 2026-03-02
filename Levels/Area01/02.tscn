@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://cmy11cmiyfd0g"]
+[gd_scene load_steps=6 format=3 uid="uid://cmy11cmiyfd0g"]
 
 [ext_resource type="Script" path="res://Levels/Scripts/level.gd" id="1_8poy7"]
 [ext_resource type="PackedScene" uid="uid://bjkvxd08a2m0c" path="res://Tile Maps/grass_01.tscn" id="2_8es65"]
 [ext_resource type="PackedScene" uid="uid://0vpjki7xpon7" path="res://Levels/player_spawn.tscn" id="3_51ygf"]
 [ext_resource type="PackedScene" uid="uid://0w4gsirgauc3" path="res://Props/Plants/plant.tscn" id="4_lrmxc"]
+[ext_resource type="PackedScene" uid="uid://bbvap8lfyju0c" path="res://Levels/LevelTransition.tscn" id="5_spbou"]
 
 [node name="02" type="Node2D"]
 script = ExtResource("1_8poy7")
@@ -51,3 +52,8 @@ position = Vector2(96, 265)
 
 [node name="Plant12" parent="Plants" instance=ExtResource("4_lrmxc")]
 position = Vector2(58, 265)
+
+[node name="LevelTransition" parent="." instance=ExtResource("5_spbou")]
+position = Vector2(239, -32)
+size = 3
+side = 2
