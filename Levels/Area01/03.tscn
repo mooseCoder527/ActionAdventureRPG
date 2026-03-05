@@ -23,7 +23,6 @@ position = Vector2(196, 177)
 
 [node name="Slime3" parent="." instance=ExtResource("4_e2yh5")]
 position = Vector2(291, 93)
-HP = 100
 
 [node name="LevelTransition" parent="." instance=ExtResource("5_7dq34")]
 position = Vector2(-37, 173)
