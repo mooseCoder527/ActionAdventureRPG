@@ -30,8 +30,7 @@ func _unhandled_input(event: InputEvent) -> void:
 
 
 func Initialize( _player : Player) -> void:
-	states = []
-	
+	states = []	
 	for c in get_children():
 		if c is State:
 			states.append(c)

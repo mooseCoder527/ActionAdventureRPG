@@ -4,6 +4,7 @@ class_name State_Walk extends State
 
 @onready var idle : State = $"../Idle"
 @onready var attack: State_Attack = $"../Attack"
+@onready var timer: Timer = $Timer
 
 
 

@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://62a7vlxnp5wq" path="res://GeneralNodes/HitBox/hit_box.tscn" id="2_haemv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_igcjk"]
-size = Vector2(28, 30)
+size = Vector2(20, 10)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4ojpx"]
 size = Vector2(24, 16)

@@ -10,6 +10,7 @@ func _ready() -> void:
 	PauseMenu.shown.connect( update_inventory )
 	PauseMenu.hidden.connect( clear_inventory )
 	clear_inventory()
+	data.changed.connect( on_inventory_changed )
 	pass
 
 
@@ -25,3 +26,8 @@ func update_inventory() -> void:
 		new_slot.slot_data = s
 	
 	get_child( 0 ).grab_focus()
+
+
+func on_inventory_changed() -> void:
+	clear_inventory()
+	update_inventory()

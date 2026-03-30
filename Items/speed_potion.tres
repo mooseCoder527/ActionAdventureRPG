@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=7 format=3 uid="uid://bvxumgbm83vfm"]
+
+[ext_resource type="Script" path="res://Items/Item Effect/item_effect.gd" id="1_isitr"]
+[ext_resource type="Script" path="res://Items/Item Effect/item_effect_fast.gd" id="2_t7u54"]
+[ext_resource type="Script" path="res://Items/Scripts/resource_item_data.gd" id="3_mtucn"]
+[ext_resource type="Texture2D" uid="uid://dgnjg43h7lwx2" path="res://Items/Sprites/potions_01.png" id="4_uijy5"]
+
+[sub_resource type="Resource" id="Resource_i8j7b"]
+script = ExtResource("2_t7u54")
+fast_duration = 30.0
+fast_factor = 2.0
+use_descripton = ""
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xoenb"]
+atlas = ExtResource("4_uijy5")
+region = Rect2(351, 416, 32, 32)
+
+[resource]
+script = ExtResource("3_mtucn")
+name = "Speedy Potion"
+description = "This sunny potion makes you run fast!"
+texture = SubResource("AtlasTexture_xoenb")
+effects = Array[ExtResource("1_isitr")]([SubResource("Resource_i8j7b")])

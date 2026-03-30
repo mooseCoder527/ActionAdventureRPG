@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=8 format=3 uid="uid://bd7y2gn1xqpkc"]
+
+[ext_resource type="Script" path="res://Items/Item Effect/item_effect.gd" id="1_k2ngd"]
+[ext_resource type="Script" path="res://Items/Item Effect/item_effect_heal.gd" id="2_m14rh"]
+[ext_resource type="AudioStream" uid="uid://bey4bnme27bwt" path="res://Items/Item Effect/hp-up.wav" id="3_wb8js"]
+[ext_resource type="Script" path="res://Items/Scripts/resource_item_data.gd" id="4_cqq7n"]
+[ext_resource type="Texture2D" uid="uid://dgnjg43h7lwx2" path="res://Items/Sprites/potions_01.png" id="5_cevwj"]
+
+[sub_resource type="Resource" id="Resource_mansw"]
+script = ExtResource("2_m14rh")
+heal_amount = 3
+sound = ExtResource("3_wb8js")
+use_descripton = ""
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ty0ia"]
+atlas = ExtResource("5_cevwj")
+region = Rect2(64, -1, 32, 32)
+
+[resource]
+script = ExtResource("4_cqq7n")
+name = "Healing Potion"
+description = "This mysterious red liquid restores your health!"
+texture = SubResource("AtlasTexture_ty0ia")
+effects = Array[ExtResource("1_k2ngd")]([SubResource("Resource_mansw")])

@@ -13,6 +13,7 @@ var max_hp : int = 6
 @onready var sprite : Sprite2D = $Sprite2D
 @onready var hit_box: HitBox = $HitBox
 @onready var effect_animation_player: AnimationPlayer = $EffectAnimationPlayer
+@onready var walk: State_Walk = $StateMachine/Walk
 
 signal direction_changed( new_direction : Vector2 )
 signal player_damaged( hurt_box : HurtBox)

@@ -660,6 +660,9 @@ script = ExtResource("4_nkw55")
 [node name="Walk" type="Node" parent="StateMachine"]
 script = ExtResource("8_miiry")
 
+[node name="Timer" type="Timer" parent="StateMachine/Walk"]
+wait_time = 4096.0
+
 [node name="Attack" type="Node" parent="StateMachine"]
 script = ExtResource("6_amlir")
 attack_sound = ExtResource("8_2a3ro")

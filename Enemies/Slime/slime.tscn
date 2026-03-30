@@ -3,10 +3,10 @@
 [ext_resource type="Texture2D" uid="uid://0bcb38d5v24y" path="res://Player/Sprites/Shadow.png" id="1_cemsp"]
 [ext_resource type="Script" path="res://Enemies/Scripts/enemy.gd" id="1_p152q"]
 [ext_resource type="PackedScene" uid="uid://cfi4ayseaar26" path="res://GeneralNodes/HurtBox/hurt_box.tscn" id="2_oifhp"]
-[ext_resource type="Texture2D" uid="uid://bualn1x8k3kj7" path="res://Enemies/Sprites/Yellow-Slime.png" id="2_ojbwh"]
 [ext_resource type="PackedScene" uid="uid://62a7vlxnp5wq" path="res://GeneralNodes/HitBox/hit_box.tscn" id="3_bs140"]
 [ext_resource type="Script" path="res://Enemies/Scripts/enemy_state_machine.gd" id="4_8l7qc"]
 [ext_resource type="Script" path="res://Enemies/Scripts/States/enemy_state_idle.gd" id="5_iqlyn"]
+[ext_resource type="Texture2D" uid="uid://cd1hswmb4acvp" path="res://Enemies/Sprites/Purple-Slime.png" id="5_l2ttt"]
 [ext_resource type="AudioStream" uid="uid://dq0urt7fk5mby" path="res://Enemies/Sprites/hit_01.wav" id="5_y3w08"]
 [ext_resource type="Script" path="res://Enemies/Scripts/States/enemy_state_wander.gd" id="6_1uhfd"]
 [ext_resource type="AudioStream" uid="uid://do7l4y85jgn5p" path="res://Enemies/Sprites/hit_00.wav" id="6_ideod"]
@@ -745,7 +745,7 @@ texture = ExtResource("1_cemsp")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, -20)
-texture = ExtResource("2_ojbwh")
+texture = ExtResource("5_l2ttt")
 hframes = 16
 vframes = 2
 

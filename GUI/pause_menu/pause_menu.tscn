@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://b6mh75ttubu4b"]
 
 [ext_resource type="Script" path="res://GUI/pause_menu/pause_menu.gd" id="1_f8ys2"]
-[ext_resource type="Texture2D" uid="uid://b2xcsno1adthq" path="res://Items/Sprites/items.png" id="2_spjhb"]
+[ext_resource type="Texture2D" uid="uid://b2xcsno1adthq" path="res://Items/Sprites/base_items.png" id="2_spjhb"]
 [ext_resource type="Script" path="res://GUI/pause_menu/Inventory/Scripts/inventory_ui.gd" id="3_t71m3"]
 [ext_resource type="Resource" uid="uid://bucd424xogm65" path="res://GUI/pause_menu/Inventory/player_inventory.tres" id="4_nhcgm"]
 
@@ -59,7 +59,6 @@ offset_top = 158.0
 offset_right = 229.0
 offset_bottom = 185.0
 theme_override_font_sizes/font_size = 10
-text = "This strange red liquid restores your health!"
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
@@ -103,3 +102,7 @@ layout_mode = 2
 columns = 5
 script = ExtResource("3_t71m3")
 data = ExtResource("4_nhcgm")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+volume_db = -14.857
+max_polyphony = 4

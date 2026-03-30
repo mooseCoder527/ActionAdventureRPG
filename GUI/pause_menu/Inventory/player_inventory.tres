@@ -1,26 +1,8 @@
-[gd_resource type="Resource" script_class="IventoryData" load_steps=9 format=3 uid="uid://bucd424xogm65"]
+[gd_resource type="Resource" script_class="InventoryData" load_steps=3 format=3 uid="uid://bucd424xogm65"]
 
 [ext_resource type="Script" path="res://GUI/pause_menu/Inventory/Scripts/inventory_data.gd" id="1_exdsv"]
 [ext_resource type="Script" path="res://GUI/pause_menu/Inventory/Scripts/slot_data.gd" id="2_8ke2u"]
-[ext_resource type="Resource" uid="uid://dvaetbyjxg6f6" path="res://Items/gem.tres" id="3_38oot"]
-[ext_resource type="Resource" uid="uid://dt7jc8jbcwlb3" path="res://Items/potion.tres" id="4_r5bp3"]
-[ext_resource type="Resource" uid="uid://b6ldpl2buv2fq" path="res://Items/stone.tres" id="5_ktf6k"]
-
-[sub_resource type="Resource" id="Resource_2guna"]
-script = ExtResource("2_8ke2u")
-item_data = ExtResource("3_38oot")
-quantity = 25
-
-[sub_resource type="Resource" id="Resource_6akfn"]
-script = ExtResource("2_8ke2u")
-item_data = ExtResource("4_r5bp3")
-quantity = 3
-
-[sub_resource type="Resource" id="Resource_vuny4"]
-script = ExtResource("2_8ke2u")
-item_data = ExtResource("5_ktf6k")
-quantity = 10
 
 [resource]
 script = ExtResource("1_exdsv")
-slots = Array[ExtResource("2_8ke2u")]([SubResource("Resource_2guna"), SubResource("Resource_6akfn"), SubResource("Resource_vuny4"), null, null, null, null, null, null, null])
+slots = Array[ExtResource("2_8ke2u")]([null, null, null, null, null, null, null, null, null, null])

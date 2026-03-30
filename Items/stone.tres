@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="ItemData" load_steps=4 format=3 uid="uid://b6ldpl2buv2fq"]
+[gd_resource type="Resource" script_class="ItemData" load_steps=5 format=3 uid="uid://b6ldpl2buv2fq"]
 
+[ext_resource type="Script" path="res://Items/Item Effect/item_effect.gd" id="1_6533d"]
 [ext_resource type="Script" path="res://Items/Scripts/resource_item_data.gd" id="1_egpyo"]
-[ext_resource type="Texture2D" uid="uid://b2xcsno1adthq" path="res://Items/Sprites/items.png" id="2_e1i6w"]
+[ext_resource type="Texture2D" uid="uid://b2xcsno1adthq" path="res://Items/Sprites/base_items.png" id="2_e1i6w"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_iyge6"]
 atlas = ExtResource("2_e1i6w")
@@ -12,3 +13,4 @@ script = ExtResource("1_egpyo")
 name = "Stone"
 description = "Who doesn't love collecting rocks?"
 texture = SubResource("AtlasTexture_iyge6")
+effects = Array[ExtResource("1_6533d")]([])
